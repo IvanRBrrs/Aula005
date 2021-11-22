@@ -46,5 +46,33 @@
             }
         </script>
     </div>
+    <div class="form">
+        <h1>Exercício 03 - Aula 06</h1>
+        <h3>Sistema de multas</h3>
+        <br/>
+        <p>Velocidade do carro</p>
+        <input type="number" name="velocidade" id="velocidade"> <strong id="quilometros">KM/h</strong>
+        <input type="submit" value="Verificar" onclick="calcular()">
+        <div id="vResultado"></div>
+        <script>
+            // Cria a funçao calcular
+            function calcular() {
+                // define a variavel velocidade pegando o ID do input velocidade
+                let velocidade = document.getElementById('velocidade');
+                let vResultado = document.getElementById('vResultado');
+                let vel = Number(velocidade.value);
+                vResultado.innerHTML = ` Sua velocidade atual é de <strong>${vel} KM/h</strong> `;
+                // res.innerHTML = ' Sua velocidade atual é de <strong>' + vel + 'KM/h</strong> ';
+                if (vel > 50){
+                    // Acrescenta na div vResultado informando que ele esta multado.
+                    vResultado.innerHTML += ` Voce está <strong>Multado!</strong> `;
+                    // Emite um alerta informando a velocidade 
+                    // alert(` Voce esta Multado! Pois sua velocidade é ${vel} KM/h.`);
+                } else {
+                    vResultado.innerHTML += ` Parabens, voce não foi <strong>Multado!</strong> `;
+                }
+            }
+        </script>
+    </div>
 </body>
 </html>
