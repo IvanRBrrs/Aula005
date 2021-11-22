@@ -1,3 +1,6 @@
 # Aula005
 
-Exercicio01 e Exercicio02 Finalizados
+Exercicio01 
+Exercicio02 
+Exercicio03 - Aula006
+Finalizados
