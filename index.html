@@ -76,5 +76,19 @@
             }
         </script>
     </div>
+    <div class="form">
+        <h1>Exercício 04 - Aula 06</h1>
+        <input type="text" name="nome" id="nome" >
+        <input type="submit" name="Enviar" onclick="send()">
+        <div id="tResultado"></div>
+        <script>
+            function send(){
+            let nome = document.getElementById('nome');
+            let tResultado = document.getElementById('tResultado');
+            let text = (nome.value);
+            tResultado.innerHTML = ` Seu nome é <strong>${text}</strong> `;
+            }
+        </script>
+    </div>
 </body>
 </html>
